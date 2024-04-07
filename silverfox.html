@@ -6,34 +6,31 @@
 <title>Books for You</title>
 <style>
     body {
-        background-color: #CBC3E3; /* Purple background */
+        background-color: #9370DB; /* Medium purple background */
         font-family: Arial, sans-serif;
         color: #ffffff; /* White text */
         padding: 20px;
     }
     h2 {
         cursor: pointer;
-        background-color: #333; /* Dark grey for titles */
+        background-color: #483D8B; /* Dark purple for titles */
         padding: 10px;
         margin: 5px 0;
     }
     p {
         display: none; /* Initially hide paragraphs */
         padding: 10px;
-        background-color: #666; /* Medium grey for text */
+        background-color: #6A5ACD; /* Medium purple for text */
     }
 </style>
 </head>
 <body>
     <h1>Books for You</h1>
-    <h2 onclick="toggleText('book1')">Chapter 1: Slice of Life</h2>
-    <p id="book1">Insert your text for Chapter 1 here.</p>
+    <h2 onclick="toggleText('book1')">Book 1</h2>
+    <p id="book1">Insert your text for Book 1 here.</p>
 
-    <h2 onclick="toggleText('book2')">Chapter 2: Sold on Spring Break</h2>
-    <p id="book2">I throw my hair in a messy bun and throw my new Panic! Shirt I got last week during a Hot Topic run with my best friend Luke. I make my way to the bathroom in the hall and sloppily do my eyeliner. Its crooked but I don’t care. After spraying some cucumber melon bath and body works, I make my way down the stairs hearing some voices coming from the living room. Odd. It’s 7AM on a school day not even my alcoholic mother would be here.</p>
-
-    <h2 onclick="toggleText('book2')">Chapter 3: A Room of One's Own</h2>
-    <p id="book2">Insert your text for Chapter 3 here.</p>
+    <h2 onclick="toggleText('book2')">Book 2</h2>
+    <p id="book2">Insert your text for Book 2 here.</p>
 
     <script>
         function toggleText(bookId) {
