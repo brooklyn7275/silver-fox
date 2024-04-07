@@ -3,28 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Book</title>
+    <title>Basic Website with Input Box</title>
     <style>
         body {
-            background-color: #f0f0f0; /* Grey background */
+            background-color: green;
+            color: white;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff; /* White background for content */
-            padding: 20px;
+        main {
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
         }
-        h1 {
-            color: #333; /* Dark text color */
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
-        .chapter {
-            margin-bottom: 20px;
+        button:hover {
+            background-color: #45a049;
         }
+         #displayText {
+             margin-top: 10px;
+         }
+
+     </style>
+ </head>
+ <body>
+     <header>
+         <h1>DEI or NAH</h1>
+     </header>
+     <main>
+         <label for="textInput">Enter your text:</label>
+        <input type="text" id="textInput" name="textInput">
+        <button type="button" onclick="displayText()">Submit</button>
+         <p id="displayText"></p>
+     </main>
+     <footer>
+         <p>&copy; SWAG IN DEI. All rights reserved.</p>
+     </footer>
     </style>
 </head>
 <body>
@@ -38,7 +69,7 @@
             <h2>Chapter 2: Title of Chapter 2</h2>
             <p>Content of Chapter 2 goes here...</p>
         </div>
-        <!-- Repeat the above chapter structure for all 10 chapters -->
+
     </div>
 </body>
 </html>
