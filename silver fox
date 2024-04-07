@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Website with Input Box</title>
-    <style>
-        body {
-            background-color: grey;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        main {
-            margin: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-     </style>
- </head>
- <body>
-     <header>
-         <h1>Books for you</h1>
-     </header>
-     </main>
-     <footer>
-         <p>&copy; Y/N Corp. All rights reserved.</p>
-     </footer>
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Books for You</title>
+<style>
+    body {
+        background-color: #f0f0f0; /* Grey background */
+        font-family: Arial, sans-serif;
+        color: #ffffff; /* White text */
+        padding: 20px;
+    }
+    h2 {
+        cursor: pointer;
+        background-color: #333; /* Dark grey for titles */
+        padding: 10px;
+        margin: 5px 0;
+    }
+    p {
+        display: none; /* Initially hide paragraphs */
+        padding: 10px;
+        background-color: #666; /* Medium grey for text */
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>I was sold to the Silver Fox</h1>
-        <div class="chapter">
-            <h2>Chapter 1: Slice of Life</h2>
-            <p>Content of Chapter 1 goes here...</p>
-        </div>
-        <div class="chapter">
-            <h2>Chapter 2: Sold on Spring Break</h2>
-            <p>I throw my hair in a messy bun and throw my new Oanic! shirt I got last week during a Hot Topic run with my best friend Luke</p>
-        </div>
+    <h1>Books for You</h1>
+    <h2 onclick="toggleText('book1')">Chapter 1</h2>
+    <p id="book1">Insert your text for Chapter 1 here.</p>
 
-    </div>
+    <h2 onclick="toggleText('book2')">Chapter 2</h2>
+    <p id="book2">Insert your text for Chapter 2 here.</p>
+
+    <script>
+        function toggleText(bookId) {
+            var text = document.getElementById(bookId);
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
