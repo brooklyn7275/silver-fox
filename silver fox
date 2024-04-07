@@ -6,7 +6,7 @@
     <title>Basic Website with Input Box</title>
     <style>
         body {
-            background-color: green;
+            background-color: grey;
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -19,55 +19,29 @@
             display: block;
             margin-bottom: 10px;
         }
-        input[type="text"] {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: white;
-        }
-        button {
-            padding: 8px 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-         #displayText {
-             margin-top: 10px;
-         }
 
      </style>
  </head>
  <body>
      <header>
-         <h1>DEI or NAH</h1>
+         <h1>Books for you</h1>
      </header>
-     <main>
-         <label for="textInput">Enter your text:</label>
-        <input type="text" id="textInput" name="textInput">
-        <button type="button" onclick="displayText()">Submit</button>
-         <p id="displayText"></p>
      </main>
      <footer>
-         <p>&copy; SWAG IN DEI. All rights reserved.</p>
+         <p>&copy; Y/N Corp. All rights reserved.</p>
      </footer>
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>My Book</h1>
+        <h1>I was sold to the Silver Fox</h1>
         <div class="chapter">
-            <h2>Chapter 1: Title of Chapter 1</h2>
+            <h2>Chapter 1: Slice of Life</h2>
             <p>Content of Chapter 1 goes here...</p>
         </div>
         <div class="chapter">
-            <h2>Chapter 2: Title of Chapter 2</h2>
-            <p>Content of Chapter 2 goes here...</p>
+            <h2>Chapter 2: Sold on Spring Break</h2>
+            <p>I throw my hair in a messy bun and throw my new Oanic! shirt I got last week during a Hot Topic run with my best friend Luke</p>
         </div>
 
     </div>
